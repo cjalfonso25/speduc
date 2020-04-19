@@ -1,0 +1,35 @@
+header {
+  .navbar {
+    background-color: #fff !important;
+
+    .navbar-toggler {
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .navbar-brand {
+      img {
+        width: 32px;
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        a {
+          font-size: 14px;
+
+          &:hover {
+            color: #109e86;
+          }
+        }
+      }
+      .active {
+        & > .nav-link {
+          color: #109e86 !important;
+        }
+      }
+    }
+  }
+}

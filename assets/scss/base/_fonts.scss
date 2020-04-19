@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif|Montserrat:200,400,600&display=swap");
+
+.h {
+  &--title {
+    font-family: "Bree Serif", serif;
+    font-size: 72px;
+
+    @include respond-to("screen-xs") {
+      font-size: 30px;
+    }
+
+    @include respond-to("screen-md") {
+      font-size: 60px;
+    }
+  }
+
+  &--body-title {
+    font-family: "Bree Serif", serif;
+    color: #727272;
+
+    @include respond-to("screen-xs") {
+      font-size: 24px;
+    }
+
+    @include respond-to("screen-md") {
+      font-size: 30px;
+    }
+  }
+
+  &--body-title--white {
+    color: #fff;
+  }
+
+  &--sub-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+
+    @include respond-to("screen-xs") {
+      font-size: 14px;
+    }
+
+    @include respond-to("screen-md") {
+      font-size: 36px;
+    }
+  }
+}
+
+.body-content {
+  font-family: "Montserrat", sans-serif;
+  // font-weight: 400;
+
+  @include respond-to("screen-xs") {
+    font-size: 12px;
+  }
+
+  @include respond-to("screen-md") {
+    font-size: 18px;
+  }
+}
+
+.testimonial--user {
+  font-weight: 600;
+}
+
+.testimonial-quote {
+  color: #a5c763;
+  font-size: 28px;
+
+  @include respond-to("screen-xs") {
+    font-size: 16px;
+  }
+
+  @include respond-to("screen-sm") {
+    font-size: 18px;
+  }
+
+  @include respond-to("screen-md") {
+    font-size: 22px;
+  }
+}
+
+.p--footer {
+  font-size: 14px;
+
+  @include respond-to("screen-xs") {
+    font-size: 12px;
+  }
+}

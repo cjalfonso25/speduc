@@ -1,0 +1,235 @@
+.main {
+  padding: 200px 0;
+  text-align: center;
+  background: url("../img/main-banner.jpg");
+  background-size: cover;
+
+  @include respond-to("screen-xs") {
+    padding: 60px 0;
+  }
+
+  @include respond-to("screen-md") {
+    padding: 120px 0;
+  }
+
+  .h {
+    &--title {
+      color: white;
+    }
+
+    &--sub-title {
+      margin-top: 24px;
+      color: #eeeeee;
+
+      @include respond-to("screen-xs") {
+        margin-top: 8px;
+      }
+    }
+  }
+
+  .main--button {
+    padding: 8px 24px;
+    margin-top: 32px;
+    background-color: #109e86;
+    background-clip: padding-box;
+    color: #fff;
+    border: 3px solid rgba($color: #fff, $alpha: 0.3);
+    border-radius: 20px;
+    outline: none;
+
+    &:hover {
+      background-color: #0d816e;
+    }
+
+    @include respond-to("screen-xs") {
+      font-size: 12px;
+    }
+
+    @include respond-to("screen-md") {
+      font-size: 18px;
+    }
+  }
+}
+
+.what-we-do {
+  padding: 48px 0;
+  text-align: center;
+  background: url("../img/whatwedo.jpg");
+  background-size: cover;
+}
+
+.how-we-achieve-results {
+  color: white;
+
+  &--left {
+    padding: 120px;
+    background-color: #a5c763;
+
+    @include respond-to("screen-xs") {
+      padding: 32px 16px;
+    }
+
+    @include respond-to("screen-sm") {
+      padding: 48px;
+    }
+
+    @include respond-to("screen-md") {
+      padding: 60px;
+    }
+
+    .how-we-achieve-results--body {
+      position: relative;
+    }
+
+    .body-content {
+      &--first {
+        padding: 0 0 16px 32px;
+        margin-left: 16px;
+        margin-bottom: 0;
+        border-left: 1px solid rgb(218, 218, 218);
+
+        &:before {
+          content: "1";
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          left: -1px;
+          padding: 2px;
+          margin-top: -4px;
+          width: 35px;
+          height: 35px;
+          background-color: #109e86;
+          border: 3px solid rgba($color: rgb(255, 255, 255), $alpha: 0.3);
+          background-clip: padding-box;
+          border-radius: 50%;
+        }
+      }
+
+      &--second {
+        padding-left: 48px;
+
+        &:before {
+          content: "2";
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          left: -1px;
+          padding: 2px;
+          margin-top: -4px;
+          width: 35px;
+          height: 35px;
+          background-color: #109e86;
+          border: 3px solid rgba($color: #fff, $alpha: 0.3);
+          background-clip: padding-box;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  &--right {
+    padding: 120px;
+    height: 100%;
+    background: no-repeat url("../img/right.png");
+    background-size: cover;
+
+    @include respond-to("screen-xs") {
+      min-height: 300px;
+    }
+
+    @include respond-to("screen-sm") {
+      min-height: 350px;
+    }
+  }
+}
+
+.parents {
+  padding: 48px 0;
+  text-align: center;
+}
+.we-cater {
+  padding: 48px 0px;
+  text-align: center;
+  background-color: #f7f7f7;
+
+  &--images {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+
+    img {
+      padding: 8px;
+      max-width: 100%;
+      height: auto;
+
+      @include respond-to("screen-xs") {
+        max-width: 110px;
+      }
+
+      @include respond-to("screen-sm") {
+        max-width: 130px;
+      }
+
+      @include respond-to("screen-md") {
+        max-width: 180px;
+      }
+    }
+
+    @include respond-to("screen-xs") {
+      display: block;
+    }
+
+    @include respond-to("screen-sm") {
+      display: block;
+    }
+
+    @include respond-to("screen-md") {
+      display: block;
+    }
+
+    @include respond-to("screen-lg") {
+      padding: 0 80px;
+    }
+  }
+}
+
+.testimonials {
+  padding: 120px 0;
+  background: url("../img/testimonials.jpg");
+  background-size: cover;
+
+  @include respond-to("screen-xs") {
+    padding: 48px 0;
+  }
+
+  @include respond-to("screen-sm") {
+    padding: 48px 0;
+  }
+
+  @include respond-to("screen-md") {
+    padding: 80px 0;
+  }
+
+  .testimonial {
+    margin: 16px 48px;
+
+    &--message {
+      padding: 0 24px;
+      text-align: center;
+    }
+
+    @include respond-to("screen-xs") {
+      margin: 16px 0px;
+    }
+
+    @include respond-to("screen-sm") {
+      margin: 16px 0px;
+    }
+
+    @include respond-to("screen-md") {
+      margin: 16px;
+    }
+  }
+}
